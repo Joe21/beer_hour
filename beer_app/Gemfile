@@ -6,7 +6,6 @@ gem 'httparty'
 gem 'bson_ext'
 gem 'mongoid', '~> 4', git: 'git@github.com:mongoid/mongoid'
 
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
