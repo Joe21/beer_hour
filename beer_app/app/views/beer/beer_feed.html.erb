@@ -1,1 +1,3 @@
-<%= @response.to_json %>
+<h1><% @beers.each do |beer| %></h1>
+	<p><%= beer.tag %></p>
+<% end %>

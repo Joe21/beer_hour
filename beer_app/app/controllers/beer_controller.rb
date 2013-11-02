@@ -17,13 +17,14 @@ class BeerController < ApplicationController
 				longitude = res["location"]["longitude"]
 				url = res["images"]["standard_resolution"]["url"]
 
-				Beer.create(tag: "beerporn", latitude: latitude, longitude: longitude, url: url)
+				@beers = Beer.create(tag: "beerporn", latitude: latitude, longitude: longitude, url: url)
 			end
 		end
 
 # Send back
-		render :json => Beer.find
+		# render :json => Beer.find
 		# @response.to_json
+		render :json => @beers
 	end
 
 end
