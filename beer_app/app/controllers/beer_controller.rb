@@ -25,6 +25,8 @@ class BeerController < ApplicationController
 
 		render :json => Beer.all
 
+		
+
 		# @response.to_json
 	end
 
