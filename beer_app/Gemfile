@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 gem 'httparty'
 gem 'bson_ext'
 gem 'mongoid', '~> 4', git: 'git@github.com:mongoid/mongoid'
+gem 'mongo_mapper'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
