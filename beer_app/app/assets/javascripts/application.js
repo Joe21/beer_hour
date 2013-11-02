@@ -15,10 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-
-
-
-
 my_func = function(){
 
 	$.ajax({
