@@ -23,7 +23,13 @@ class BeerController < ApplicationController
 
 # Send back
 
-		render :json => Beer.all
+	 	beers = Beer.desc(:_id).limit(10)
+
+	 	formatted_beers = beers.map do |beer|
+	 		{latitude: beer.latitude.to_f, longitude: beer.longitude.to_f}
+	 	end
+
+		render :json => formatted_beers.to_json
 
 		
 

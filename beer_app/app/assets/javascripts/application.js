@@ -14,14 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-my_func = function(){
-
-	$.ajax({
-		dataType: 'json',
-		method: 'GET',
-		url: '/beer_feed',
-	}).done(function(data){
-		console.log(data);
-	});
-};
