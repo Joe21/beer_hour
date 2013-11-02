@@ -19,13 +19,13 @@
 
 
 
-// my_func = function(){
+my_func = function(){
 
-// 	$.ajax({
-// 		dataType: 'json',
-// 		method: 'GET',
-// 		url: '/beer_feed',
-// 	}).done(function(data){
-// 		console.log(data);
-// 	});
-// };
+	$.ajax({
+		dataType: 'json',
+		method: 'GET',
+		url: '/beer_feed',
+	}).done(function(data){
+		console.log(data);
+	});
+};
