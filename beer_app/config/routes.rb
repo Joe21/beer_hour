@@ -1,5 +1,6 @@
 BeerApp::Application.routes.draw do
   
-root :to => "beer#index" 
+root :to => "beer#index"
+
 
 end
