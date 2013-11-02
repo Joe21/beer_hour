@@ -22,9 +22,10 @@ class BeerController < ApplicationController
 		end
 
 # Send back
-		# render :json => Beer.find
+
+		render :json => Beer.all
+
 		# @response.to_json
-		render :json => @beers
 	end
 
 end
