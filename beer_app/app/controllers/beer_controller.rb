@@ -26,7 +26,7 @@ class BeerController < ApplicationController
 	 	beers = Beer.desc(:_id).limit(10)
 
 	 	formatted_beers = beers.map do |beer|
-	 		{latitude: beer.latitude.to_f, longitude: beer.longitude.to_f}
+	 		{latitude: beer.latitude.to_f, longitude: beer.longitude.to_f, url: beer.url.to_s}
 	 	end
 
 		render :json => formatted_beers.to_json
@@ -37,6 +37,3 @@ class BeerController < ApplicationController
 	end
 
 end
-
-
-# @response.each do |instance|
